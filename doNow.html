@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<input id="words" type="text"><br><br>
+		<button>Button</button>
+		<div id="print"></div>
+		<p></p>
+		<script>
+			$("button").click(()=>{
+				const txt = $("#words").val()
+				$("#print").append(`${txt}<br>`);
+			});
+		</script>
+		<style>
+			button{
+				height: 50px;
+				width: 50px;
+				background-color: red;
+				color: blue;
+			}
+		</style>
+	</body>
+</html>
