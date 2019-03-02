@@ -6,19 +6,47 @@
     <table>
       <tr>
         <td><input id="one" type="number"></td>
-        <td><p id="symbol">+</p></td>
+        <td><p id="symbol"></p></td>
         <td><input id="two" type="number"></td>
       </tr>
     </table><br>
-    <button id="compute">Compute</button><br>
+    <button id="plus">+</button>
+    <button id="sub">-</button>
+    <button id="mult">*</button>
+    <button id="div">/</button><br><br>
+
     <div></div>
     <script>
-      $("button").click(()=>{
+      $("#plus").click(()=>{
         const first = $("#one").val();
         const second = $("#two").val();
         const add = +first + +second;
 
         $("div").html(`${add}`);
+      });
+
+      $("#sub").click(()=>{
+        const first = $("#one").val();
+        const second = $("#two").val();
+        const subtract = +first - +second;
+
+        $("div").html(`${subtract}`);
+      });
+
+      $("#mult").click(()=>{
+        const first = $("#one").val();
+        const second = $("#two").val();
+        const multiply = +first * +second;
+
+        $("div").html(`${multiply}`);
+      });
+
+      $("#div").click(()=>{
+        const first = $("#one").val();
+        const second = $("#two").val();
+        const divide = +first / +second;
+
+        $("div").html(`${divide}`);
       });
     </script>
   </body>
