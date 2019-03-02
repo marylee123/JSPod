@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <input id="input" type="text"><br><br>
+    <button>Button</button><br>
+    <div id="space"></div>
+    <script>
+      $("button").click(()=>{
+        const text = $("#input").val();
+        if(text === "hello"){
+          $("#space").html("The text is 'hello'");
+        }else{
+          $("#space").html("The text is not 'hello'");
+        }
+      });
+    </script>
+  </body>
+</html>

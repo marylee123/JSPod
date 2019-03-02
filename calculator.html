@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><input id="one" type="number"></td>
+        <td><p id="symbol">+</p></td>
+        <td><input id="two" type="number"></td>
+      </tr>
+    </table><br>
+    <button id="compute">Compute</button><br>
+    <div></div>
+    <script>
+      $("button").click(()=>{
+        const first = $("#one").val();
+        const second = $("#two").val();
+        const add = +first + +second;
+
+        $("div").html(`${add}`);
+      });
+    </script>
+  </body>
+</html>
