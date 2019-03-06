@@ -18,6 +18,8 @@
     <div></div>
     <script>
       $("#plus").click(()=>{
+        $("#symbol").html("+");
+
         const first = $("#one").val();
         const second = $("#two").val();
         const add = +first + +second;
@@ -26,6 +28,8 @@
       });
 
       $("#sub").click(()=>{
+        $("#symbol").html("-");
+
         const first = $("#one").val();
         const second = $("#two").val();
         const subtract = +first - +second;
@@ -34,6 +38,8 @@
       });
 
       $("#mult").click(()=>{
+        $("#symbol").html("*");
+
         const first = $("#one").val();
         const second = $("#two").val();
         const multiply = +first * +second;
@@ -42,6 +48,8 @@
       });
 
       $("#div").click(()=>{
+        $("#symbol").html("/");
+
         const first = $("#one").val();
         const second = $("#two").val();
         const divide = +first / +second;
