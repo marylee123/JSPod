@@ -6,6 +6,6 @@ for(let num = 0; num < array.length; num++){
       array[num2 - 1] = array[num2];
       array[num2] = first;
     }
-    console.log(array);
   }
 }
+console.log(array);
