@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="button" style=""></button>
+
+    <script>
+      let count = 0;
+      $("#button").click(()=>{
+        count += 1;
+        if(count%2 === 0){
+          $("#button").attr("style", "background-color: red");
+        }else{
+          $("#button").attr("style", "background-color: blue");
+        }
+      });
+    </script>
+    <style>
+      #button{
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </body>
+</html>
