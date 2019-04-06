@@ -1,15 +1,11 @@
-$("#red").click(()=>{
-  $("th").attr("style", "background-color: red");
+let paintColor = "white";
+
+$("th").click((e) => {
+  console.log(paintColor);
+  $(e.target).attr("class", paintColor);
 });
-$("#orange").click(()=>{
-  $("th").attr("style", "background-color: orange");
-});
-$("#green").click(()=>{
-  $("th").attr("style", "background-color: green");
-});
-$("#sky").click(()=>{
-  $("th").attr("style", "background-color: aqua");
-});
-$("#blue").click(()=>{
-  $("th").attr("style", "background-color: blue");
+
+$("#palette div").click((e) => {
+  paintColor = $(e.target).attr("class");
+  console.log(paintColor);
 });
