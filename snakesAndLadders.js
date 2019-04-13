@@ -6,7 +6,7 @@ $("#dice").click(()=>{
   if(count%2 === 0){
     $('#' + total2).attr('style', 'background-color: white');
 
-    let dice2 = Math.floor(Math.random()*5);
+    let dice2 = Math.floor(Math.random()*6)+1;
     document.getElementById("num").innerHTML = dice2;
     total2 += dice2;
 
@@ -34,6 +34,10 @@ $("#dice").click(()=>{
     else if(total2 == 6){
       total2 = 24;
     }
+    else if(total2 >= 100){
+      alert("You win!");
+    }
+
 
     document.getElementById("spot2").innerHTML = total2;
     $("div#log").append("<p>Player 2 got "+ dice2 + ". New position is " + total2 + ".");
@@ -71,6 +75,10 @@ $("#dice").click(()=>{
     else if(total == 6){
       total = 24;
     }
+    else if(total >= 100){
+      alert("You win!");
+    }
+
 
     document.getElementById("spot").innerHTML = total;
     $("div#log").append("<p>Player 1 got "+ dice + ". New position is " + total + ".");
@@ -82,7 +90,7 @@ $("#dice").click(()=>{
     }
     else{
       $('#' + total).attr('style', 'background-color: red');
-      $('#' + total).attr('style', 'background-color: blue');
+      $('#' + total2).attr('style', 'background-color: blue');
     }
   }
 });
