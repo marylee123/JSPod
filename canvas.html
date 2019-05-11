@@ -2,8 +2,17 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="canvas.css"></link>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <div class="title">
+      <h1>A Canvas of Abstract and Geometrical Art</h1>
+    </div><br>
+
 
     <table>
       <tr>
@@ -62,7 +71,15 @@
       <div class="sky"></div>
       <div class="orange"></div>
       <div class="red"></div>
-    </div>
+      <div class="white"></div>
+    </div><br>
+
+    <label for="input">Hex Code:</label>
+    <input id="input"></input><br><br>
+    <a href="https://htmlcolorcodes.com/">Hex Code Options</a><br><br>
+    <button id="color" type="button" class="btn btn-info">Submit</button><br><br>
+
+    <button id="reset" type="button" class="btn btn-success">Reset</button>
     <script src="canvas.js"></script>
   </body>
 </html>
