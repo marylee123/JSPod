@@ -42,3 +42,21 @@ table {
   border-width: 1px;
   border-color: black;
 }
+.yellow{
+  background-color: yellow;
+}
+.pink{
+  background-color: pink;
+}
+.magenta{
+  background-color: magenta;
+}
+.teal{
+  background-color:teal;
+}
+.turquoise{
+  background-color: turquoise;
+}
+.navy{
+  background-color: navy;
+}
